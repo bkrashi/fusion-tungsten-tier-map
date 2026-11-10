@@ -1,0 +1,425 @@
+{
+ "updated": "2026-11-09",
+ "legal": "Independent research from public sources and the Sayari knowledge graph. It is not legal advice. Sayari risk flags are graph-level indicators derived from records and networks; they are not findings of wrongdoing by any named company. Sayari-flagged suppliers that appear here have not been shown to supply tungsten to ITER or Commonwealth Fusion Systems unless a link says so.",
+ "overview": {
+  "eyebrow": "Open-source intelligence · Fusion supply chains",
+  "headline": "Tungsten from mine to fusion reactor, and where the human-rights risk sits",
+  "summary": "Every magnetic-confinement fusion design puts tungsten where the plasma hits hardest: ITER's divertor alone holds about 300,000 tungsten monoblocks [S08], and ITER replaced its beryllium first wall with tungsten in 2023 [S07]. China mines 79% of the world's tungsten [S01]. The rest comes partly from conflict-affected places: eastern DRC, the Rwanda transit corridor, and armed-group territory in Myanmar [S17, S22]. This project traces that chain with Tavily web research and Sayari's corporate and trade graph, then proposes two fixes for fusion procurement.",
+  "caveat": "Sayari shows no tungsten shipments into ITER or Commonwealth Fusion Systems. The links from mines to fusion buyers on this site are sector-level routes and named-supplier records; none of them shows that tungsten from a specific abusive mine reached a reactor.",
+  "stats": [
+   {
+    "value": "79%",
+    "label": "China's share of 2025 tungsten mine output (67,000 of 85,000 t)",
+    "confidence": "Confirmed",
+    "src": [
+     "S01"
+    ]
+   },
+   {
+    "value": "≈300,000",
+    "label": "Tungsten monoblocks in ITER's divertor",
+    "confidence": "Confirmed",
+    "src": [
+     "S08"
+    ]
+   },
+   {
+    "value": "20%",
+    "label": "Share of US primary tungsten concentrate from one Rwandan mine",
+    "confidence": "Reported",
+    "src": [
+     "S20"
+    ]
+   },
+   {
+    "value": "+97%",
+    "label": "Rise in Myanmar tungsten ore shipments to China, Jan–Jul 2026",
+    "confidence": "Reported",
+    "src": [
+     "S22"
+    ]
+   },
+   {
+    "value": "34 / 57",
+    "label": "Tungsten smelters conformant with RMI's RMAP audit (May 2024)",
+    "confidence": "Reported",
+    "src": [
+     "S29"
+    ]
+   },
+   {
+    "value": "0",
+    "label": "Inbound tungsten shipments to ITER or CFS visible in Sayari",
+    "confidence": "Sayari",
+    "src": [
+     "X01",
+     "X02"
+    ]
+   }
+  ]
+ },
+ "materials": [
+  {
+   "material": "Tungsten (W)",
+   "pick": true,
+   "component": "Divertor armour, about 300,000 monoblocks in ITER [S08]. ITER first-wall armour since 2023 [S07]. Future burning-plasma designs plan to use it [S07].",
+   "producers": "China 67,000 t; Vietnam 3,000; Kazakhstan 2,400; Russia 2,000; N. Korea 2,000; Bolivia 1,700; Rwanda 1,300 (2025) [S01].",
+   "risks": "DRC forced and child labor on the US DOL list [S15]. Rwanda as a transit point for laundered Congolese 3T minerals [S17, S19]. Armed-group mining in Myanmar [S22]. Chinese export controls [S25]. Defined as a conflict mineral in US and EU law [S26, S27].",
+   "src": [
+    "S01",
+    "S07",
+    "S08",
+    "S15",
+    "S17",
+    "S22",
+    "S26",
+    "S27"
+   ]
+  },
+  {
+   "material": "Beryllium (Be)",
+   "component": "First-wall armour (dropped by ITER in 2023) and neutron multiplier in breeding blankets [S07, S10, S11].",
+   "producers": "USA 230 t; Brazil 80; China 77; Nigeria 40 (2025) [S02]. Materion's Spor Mountain, Utah, is the largest producer [S46].",
+   "risks": "Chronic beryllium disease among workers; OSHA cut the exposure limit tenfold [S45]. Xinjiang Nonferrous, which mines beryllium, was added to the UFLPA Entity List in 2024 [S23]. No artisanal beryl abuse evidence specific to beryllium was found.",
+   "src": [
+    "S02",
+    "S10",
+    "S11",
+    "S23",
+    "S45",
+    "S46"
+   ]
+  },
+  {
+   "material": "Lithium / Li-6",
+   "component": "Breeding blanket (PbLi, FLiBe or ceramic). Needs Li-6 enrichment to breed tritium [S11].",
+   "producers": "Australia 92,000 t; China 62,000; Chile 56,000; Zimbabwe 28,000; Argentina 23,000 (2025) [S03]. Li-6 enrichment only in Russia and China [S38].",
+   "risks": "Indigenous water rights in the Atacama [S35, S34, S36]. Evictions and child labor at Zimbabwe mines [S37]. Mercury legacy of COLEX enrichment [S39]. SDIC Xinjiang Lithium on the UFLPA list (2026) [S24].",
+   "src": [
+    "S03",
+    "S11",
+    "S24",
+    "S34",
+    "S35",
+    "S36",
+    "S37",
+    "S38",
+    "S39"
+   ]
+  },
+  {
+   "material": "Niobium-tin (Nb₃Sn)",
+   "component": "Low-temperature superconducting magnets, as used in ITER.",
+   "producers": "Niobium: Brazil 104,000 t of 112,000 (2025) [S04]; CBMM supplies over 80% [S43]. Tin: China 71,000; Indonesia 61,000; Peru 33,000; DRC 27,000; Myanmar 12,000 [S05].",
+   "risks": "Tin is a 3TG conflict mineral. Forced and child labor in DRC tin [S15]. Child labor in Bolivian tin [S16]. Deaths at illegal tin mines in Bangka-Belitung, Indonesia [S44]. Niobium: no rights evidence found.",
+   "src": [
+    "S04",
+    "S05",
+    "S15",
+    "S16",
+    "S43",
+    "S44"
+   ]
+  },
+  {
+   "material": "REBCO rare earths (Y, Gd)",
+   "component": "High-temperature superconducting magnet tape for CFS and Tokamak Energy [S12]. CFS ordered more than 10,000 km of tape from Fujikura [S13].",
+   "producers": "China produced most yttrium, Burma a significant share; 70% of US imports come from China [S06].",
+   "risks": "Heavy rare earths from Myanmar's Kachin State: $1.4bn trade, militia control and toxic pollution [S40, S41]. Chinese export licensing on yttrium and gadolinium since April 2025 [S42].",
+   "src": [
+    "S06",
+    "S12",
+    "S13",
+    "S40",
+    "S41",
+    "S42"
+   ]
+  }
+ ],
+ "recommendation": {
+  "text": "Tungsten has the strongest combination of a traceable supply chain and documented human-rights evidence, so this project traces it.",
+  "reasons": [
+   "It is a legally defined conflict mineral. Dodd-Frank §1502 and SEC Rule 13p-1 cover wolframite and tungsten [S26], and EU Regulation 2017/821 imposes importer due diligence [S27].",
+   "The supply chain has choke points. There are about 57 tungsten smelters, each with a public RMI ID and audit status [S28, S29]. Ores (HS 2611), tungstates (2841) and metal (8101) appear as their own lines in trade data, which is what made the Sayari trace possible [X19].",
+   "The abuse evidence spans several regions: DRC forced and child labor [S15], Rwanda laundering [S17], and conflict areas in Myanmar [S22]."
+  ],
+  "runnerup": "Lithium and REBCO rare earths have strong abuse evidence [S37, S40], but fusion-grade Li-6 comes only from Russia and China [S38], and yttrium has no dedicated US trade code [S06]. Both are close to untraceable today. Beryllium is dominated by one regulated US producer [S46], and niobium by one Brazilian company [S43]."
+ },
+ "brief": {
+  "to": "DOE Office of Science (Fusion Energy Sciences); Fusion for Energy; ITER Organization procurement",
+  "from": "Fusion Tungsten Tier Map (independent OSINT research)",
+  "date": "9 November 2026",
+  "re": "Human-rights due diligence for tungsten in fusion procurement",
+  "title": "Fusion buyers cannot see where their tungsten comes from. Two fixes.",
+  "bottom": "Tungsten is the material fusion cannot do without, and the one with the best tools for tracing it. Yet neither ITER nor Commonwealth Fusion Systems shows up as a tungsten buyer in Sayari's trade data [X01, X02]. Public funders should require a tier map and a smelter audit check before awarding tungsten-bearing contracts, and should extend existing conflict-minerals reporting to fusion supply contracts.",
+  "problem": [
+   {
+    "v": true,
+    "t": "China mines 79% of the world's tungsten and has licensed exports since February 2025 [S01, S25]."
+   },
+   {
+    "v": true,
+    "t": "The DRC tungsten trade involves forced and child labor, and Congolese 3T minerals are laundered through Rwanda [S15, S17, S19]. Rwanda now supplies up to 20% of US primary concentrate [S20]."
+   },
+   {
+    "v": true,
+    "t": "Myanmar ore from armed-group areas reaches Chinese smelters in growing volumes [S22]."
+   },
+   {
+    "v": true,
+    "t": "Only 34 of 57 tungsten smelters were RMAP-conformant in May 2024 [S29], and audited smelters have passed while sourcing from M23-held areas (for coltan) [S31]."
+   },
+   {
+    "v": true,
+    "t": "Sayari shows no inbound tungsten for ITER or CFS. The visible links stop at component makers such as Plansee, which buys tungsten wire from a Xiamen Tungsten subsidiary [X01, X02, X05]."
+   },
+   {
+    "v": false,
+    "t": "Fusion's tungsten demand is small next to tooling and defense. But every publicly funded fusion contract is a point of leverage that no other buyer of the same tungsten has."
+   }
+  ],
+  "tech": {
+   "name": "A tier map and smelter check as a procurement gate",
+   "what": "Any ITER, F4E or DOE contract that delivers tungsten parts above a set threshold must include a tier map from mine to component, built with a trade and registry graph such as Sayari. Every smelter named in it must be checked against the RMI conformant list before award and at each delivery.",
+   "how": [
+    {
+     "v": true,
+     "t": "The data exists today. Sayari resolved Plansee, Xiamen Tungsten, H.C. Starck, Masan, Nui Phao and Trinity Nyakabingo, and linked them through HS 2611, 2841 and 8101 records [X03, X05, X07, X08, X10, X11]."
+    },
+    {
+     "v": true,
+     "t": "Smelters carry RMI IDs, and the RMI publishes a tungsten conformant list [S28, S33]."
+    },
+    {
+     "v": false,
+     "t": "Bidders submit a machine-readable bill of materials: smelter RMI ID, mine of origin, HS codes and shipment record IDs. An automated screen flags sanctions, UFLPA, ILAB and conflict-mineral risk factors, as Sayari already labels them."
+    },
+    {
+     "v": false,
+     "t": "A flag does not disqualify a bidder. It triggers enhanced due diligence and a documented response, in line with the OECD five-step framework that both US and EU regimes reference."
+    },
+    {
+     "v": false,
+     "t": "Sanctions screening comes as a by-product. Sayari already shows ITER and CFS records of tungsten exports to Russian recipients, one of them sanctioned [X01, X02, X16], which procurement teams should verify."
+    }
+   ]
+  },
+  "policy": {
+   "name": "Extend conflict-minerals reporting to fusion supply contracts",
+   "what": "Dodd-Frank §1502 reaches only SEC-listed manufacturers [S26], and EU 2017/821 only importers of ores and metals [S27]. Most fusion developers are private, and most of their tungsten arrives as finished parts, so neither regime covers it. Fix that gap through contract terms and grant conditions.",
+   "how": [
+    {
+     "v": false,
+     "t": "DOE adds a clause to fusion awards (for example, milestone-based development agreements and ITER in-kind procurement) requiring an annual conflict-minerals report modelled on Form SD for tungsten, tin and tantalum content."
+    },
+    {
+     "v": false,
+     "t": "The EU applies the same expectation to F4E contracts, building on its 2025 recognition of RMAP as an equivalent scheme [S30]."
+    },
+    {
+     "v": false,
+     "t": "Both treat DRC, Rwanda and Myanmar origins as red flags requiring on-the-ground checks, not just paper audits, given the 2024 loss of ITSCI's RMI recognition [S32]."
+    },
+    {
+     "v": true,
+     "t": "The legal definitions already exist: 'wolframite and its derivative tungsten' [S26] and 'tin, tantalum and tungsten, their ores, and gold' [S27]."
+    }
+   ]
+  },
+  "objections": [
+   {
+    "v": false,
+    "t": "Cost and burden: tier mapping costs little next to a divertor contract, and suppliers such as A.L.M.T. and H.C. Starck already report to RMAP [S33]."
+   },
+   {
+    "v": false,
+    "t": "Supply squeeze: with China licensing exports [S25], buyers will be tempted to accept any non-Chinese ore. That is the reason checks on DRC, Rwanda and Myanmar origins matter more now, not less."
+   },
+   {
+    "v": false,
+    "t": "Data gaps: customs data rarely names the consignee for finished components, which is why ITER and CFS are invisible [X01, X02]. The gate makes suppliers supply that data."
+   }
+  ],
+  "next": [
+   "ITER and DOE pilot the gate on one tungsten work package, using RMI's tungsten list [S28].",
+   "Pull and verify the Sayari source records for ITER's and CFS's HS 810199 exports to Russia [X01, X02].",
+   "Ask Plansee, A.L.M.T. and H.C. Starck for their RMAP smelter IDs and mine-of-origin lists for fusion orders [S33].",
+   "Publish an annual fusion-sector tungsten sourcing summary."
+  ],
+  "facts": [
+   "79% of 2025 tungsten mine output came from China [S01].",
+   "DRC tungsten is on the DOL list for forced and child labor [S15].",
+   "The UN identifies Rwanda as a transit point for Congolese 3T minerals [S19].",
+   "Myanmar ore to China rose 97% in early 2026 [S22].",
+   "34 of 57 tungsten smelters were RMAP-conformant (May 2024) [S29].",
+   "Xiamen Honglu shipped HS 810196 tungsten wire to Plansee India in 2026 [X05].",
+   "No inbound tungsten for ITER or CFS appears in Sayari [X01, X02]."
+  ],
+  "inferences": [
+   "That DRC laundering patterns documented for coltan also apply to wolframite.",
+   "That Bolivian cooperative child labor extends to tungsten.",
+   "That a procurement gate would change supplier behaviour at fusion's small volumes.",
+   "That Plansee's Indian imports feed parts for fusion customers. This is not shown.",
+   "The severity and traceability ratings."
+  ]
+ },
+ "method": {
+  "tools": [
+   {
+    "name": "Tavily",
+    "use": "Web search and page extraction for production figures, fusion component roles and human-rights evidence. Searches were run one at a time because of rate limits."
+   },
+   {
+    "name": "Sayari",
+    "use": "Entity resolution, upstream supply-chain tracing, trade search by HS code and country, watchlist screening to depth 2, and risk-factor definitions [X19]."
+   },
+   {
+    "name": "USGS",
+    "use": "Mineral Commodity Summaries 2026 for country production figures [S01, S02, S03, S04, S05, S06]."
+   },
+   {
+    "name": "This site",
+    "use": "A static site with D3 and topojson, adapted from the Lindt Cocoa Tier Map; all content lives in data/*.json."
+   }
+  ],
+  "steps": [
+   "Listed the raw materials each fusion subsystem needs and compared production concentration and rights evidence across five materials.",
+   "Chose tungsten for its legal conflict-mineral status, its smelter audit list and its distinct HS codes.",
+   "Resolved the deployment buyers (ITER, CFS), the component maker (Plansee) and the mining and processing anchors in Sayari, then verified the IDs.",
+   "Pulled upstream supply chains filtered by HS 2611, 8101, 2841 and 2849, and ran supplier and buyer searches for six origin countries.",
+   "Screened each anchor with Sayari's watchlist and recorded every risk flag, separating direct flags from possible-match (psa_) flags.",
+   "Cross-checked Sayari links against public sources and labelled each claim with a confidence level.",
+   "Rated the five risks for severity and traceability, then wrote the brief, separating verified facts from inferences."
+  ],
+  "confidence": [
+   [
+    "Confirmed",
+    "A primary or official source states it: USGS, UN, DOL, a regulator, or the company itself."
+   ],
+   [
+    "Reported",
+    "A credible NGO, academic or press source reports it."
+   ],
+   [
+    "Sayari",
+    "A record in the Sayari graph shows it. It has not been checked against the underlying document."
+   ],
+   [
+    "Inferred",
+    "Analyst judgment or an illustrative link with no direct source."
+   ]
+  ],
+  "ratings": [
+   "Severity (1–5) weighs how grave the documented harm is (violence, forced or child labor), how widespread it is, and how strong the evidence is.",
+   "Traceability (1–5) rates how far a fusion buyer could follow tungsten from the risk back to a named mine, using trade data, registries, smelter audits and Sayari.",
+   "Both ratings are judgments made by this project, not scores taken from Sayari."
+  ],
+  "queries": [
+   {
+    "tool": "Tavily",
+    "q": "tungsten production by country 2024 USGS",
+    "r": "USGS MCS 2024–2026 tungsten tables [S01]."
+   },
+   {
+    "tool": "Tavily",
+    "q": "fusion reactor materials tungsten divertor beryllium first wall lithium breeding blanket REBCO",
+    "r": "ITER blanket page, FuseNet, EPRI blankets report [S07, S10, S11, S12]."
+   },
+   {
+    "tool": "Tavily",
+    "q": "rare earth mining Myanmar Kachin human rights Global Witness",
+    "r": "[S40, S41]"
+   },
+   {
+    "tool": "Tavily",
+    "q": "lithium mining human rights indigenous water Atacama",
+    "r": "[S34, S35, S36]"
+   },
+   {
+    "tool": "Tavily",
+    "q": "UN Group of Experts DRC M23 Rubaya 3T laundering Rwanda",
+    "r": "[S17, S18, S19]"
+   },
+   {
+    "tool": "Tavily",
+    "q": "Myanmar tungsten China smelters Karenni",
+    "r": "[S22]"
+   },
+   {
+    "tool": "Tavily",
+    "q": "UFLPA Entity List additions tungsten / nonferrous",
+    "r": "No tungsten producer found [S23, S24]."
+   },
+   {
+    "tool": "Tavily",
+    "q": "DOL List of Goods tungsten DRC Bolivia",
+    "r": "DRC tungsten listed; Bolivia tungsten not listed [S15, S16]."
+   },
+   {
+    "tool": "Tavily",
+    "q": "RMI tungsten conformant smelter list RMAP",
+    "r": "[S28, S29, S30]"
+   },
+   {
+    "tool": "Sayari",
+    "q": "search_entities: ITER Organization; Commonwealth Fusion Systems; Plansee SE; 厦门钨业股份有限公司; 中钨高新材料股份有限公司; 江西钨业控股集团有限公司; Masan High-Tech Materials; Nyakabingo; Almonty",
+    "r": "Anchors resolved [X01–X18]. 'Trinity Metals Rwanda' returned 0; the operating entity is Trinity Nyakabingo Mine [X11]."
+   },
+   {
+    "tool": "Sayari",
+    "q": "get_upstream_supply_chain(ITER | CFS, product=[2611,8101,2841,2849])",
+    "r": "0 results for both [X01, X02]."
+   },
+   {
+    "tool": "Sayari",
+    "q": "get_upstream_supply_chain(Plansee SE, HS 2611/8101/2841/2849, depth 3)",
+    "r": "Only intra-group and lighting-industry suppliers [X03]."
+   },
+   {
+    "tool": "Sayari",
+    "q": "search_shipments(query='Plansee', hs_code=8101, departure=CHN)",
+    "r": "533 rows. Xiamen Honglu → Plansee India HS 810196 [X05]."
+   },
+   {
+    "tool": "Sayari",
+    "q": "search_suppliers / search_buyers(hs_code=2611, departure ∈ RWA, VNM, COD, BOL, MMR)",
+    "r": "Corridor rollups [X19]."
+   },
+   {
+    "tool": "Sayari",
+    "q": "search_buyers(hs_code=2841, departure=VNM)",
+    "r": "H.C. Starck Tungsten 232 rows [X07]."
+   },
+   {
+    "tool": "Sayari",
+    "q": "find_shortest_path(ITER → Plansee); (Plansee → Xiamen Tungsten)",
+    "r": "2-hop path via Vacuum Techniques [X15]; 3-hop path to Xiamen Tungsten (not a supply link)."
+   },
+   {
+    "tool": "Sayari",
+    "q": "check_watchlist(depth 2) on 9 anchors",
+    "r": "No anchor is itself sanctioned and none has a PEP hit; sanctioned Russian parties appear at 1–2 hops for ITER, Plansee, CFS, Xiamen Tungsten and others [X01, X02, X03, X06]."
+   }
+  ],
+  "limits": [
+   "Sayari's shipper_name and receiver_name filters were ignored, so counterparty searches used the company name as free text with an HS code. Some facet queries timed out (HTTP 408).",
+   "Trade counts are shipment rows, not tonnes or dollars. Compact results do not include volumes.",
+   "EU and US customs data rarely name the consignee for finished components, which is the likely reason ITER and CFS are invisible as tungsten buyers.",
+   "Russian import records can name a brand owner or manufacturer as the shipper. The ITER→NIIEFA and CFS→S-Innovatsii rows need source-record verification.",
+   "psa_ flags rest on 'possibly the same as' entity matches. Subtier forced-labor flags come from network analysis, not findings against the company.",
+   "Several companies appear under duplicate Sayari records (Plansee, Xiamen Honglu, Trinity Nyakabingo); they were not merged.",
+   "Sayari entity links require a Sayari login.",
+   "Five sources link to the publisher's site rather than the exact article, because the article URL was not captured [S13, S37, S42, S46, S47]."
+  ],
+  "gaps": [
+   "A UN figure specific to wolframite laundering for 2023–25. The quantified findings concern coltan.",
+   "Plansee as a series supplier to ITER. Only its mock-up role is confirmed [S47].",
+   "Tungsten tonnage for ITER or SPARC.",
+   "CFS's tungsten suppliers.",
+   "Bolivian tungsten on the DOL list. It is not listed [S16].",
+   "The 2026 count of RMAP-conformant tungsten smelters. The latest figure found is May 2024 [S29].",
+   "The China HS 2611 corridor, and buyers for Bolivia and DRC, were not run in Sayari.",
+   "Sayari get_record retrieval for individual shipment rows was not run."
+  ]
+ }
+}

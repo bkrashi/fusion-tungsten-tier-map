@@ -1,0 +1,485 @@
+{
+ "world_total": 85000,
+ "producers": [
+  {
+   "id": "156",
+   "name": "China",
+   "tonnes": 67000,
+   "year": "2025",
+   "src": [
+    "S01"
+   ],
+   "note": "Exports of APT, oxides and carbide need licences since February 2025 [S25]."
+  },
+  {
+   "id": "704",
+   "name": "Vietnam",
+   "tonnes": 3000,
+   "year": "2025",
+   "src": [
+    "S01"
+   ],
+   "note": "Nui Phao (Masan) dominates output [X10]."
+  },
+  {
+   "id": "398",
+   "name": "Kazakhstan",
+   "tonnes": 2400,
+   "year": "2025",
+   "src": [
+    "S01"
+   ],
+   "note": "Boguty deposit started production in 2025 [S01]."
+  },
+  {
+   "id": "643",
+   "name": "Russia",
+   "tonnes": 2000,
+   "year": "2025",
+   "src": [
+    "S01"
+   ],
+   "note": ""
+  },
+  {
+   "id": "408",
+   "name": "North Korea",
+   "tonnes": 2000,
+   "year": "2025",
+   "src": [
+    "S01"
+   ],
+   "note": ""
+  },
+  {
+   "id": "068",
+   "name": "Bolivia",
+   "tonnes": 1700,
+   "year": "2025",
+   "src": [
+    "S01"
+   ],
+   "note": "Cooperative mining; tungsten is not on the DOL list, but tin, zinc and silver are [S16]."
+  },
+  {
+   "id": "646",
+   "name": "Rwanda",
+   "tonnes": 1300,
+   "year": "2025",
+   "src": [
+    "S01"
+   ],
+   "note": "Nyakabingo supplies up to 20% of US primary concentrate [S20]."
+  },
+  {
+   "id": "036",
+   "name": "Australia",
+   "tonnes": 1000,
+   "year": "2025",
+   "src": [
+    "S01"
+   ],
+   "note": ""
+  },
+  {
+   "id": "040",
+   "name": "Austria",
+   "tonnes": 840,
+   "year": "2025",
+   "src": [
+    "S01"
+   ],
+   "note": ""
+  },
+  {
+   "id": "724",
+   "name": "Spain",
+   "tonnes": 800,
+   "year": "2025",
+   "src": [
+    "S01"
+   ],
+   "note": ""
+  },
+  {
+   "id": "620",
+   "name": "Portugal",
+   "tonnes": 700,
+   "year": "2025",
+   "src": [
+    "S01"
+   ],
+   "note": ""
+  }
+ ],
+ "nodes": [
+  {
+   "name": "ITER, Cadarache",
+   "short": "ITER",
+   "lon": 5.76,
+   "lat": 43.71,
+   "type": "deploy",
+   "role": "Tier 0 deployment",
+   "dx": -7,
+   "dy": 12,
+   "anchor": "end"
+  },
+  {
+   "name": "CFS SPARC, Devens MA",
+   "short": "CFS",
+   "lon": -71.6,
+   "lat": 42.5,
+   "type": "deploy",
+   "role": "Tier 0 deployment; tungsten sourcing not visible",
+   "dx": 7,
+   "dy": -6,
+   "anchor": "start"
+  },
+  {
+   "name": "Plansee, Reutte",
+   "short": "Plansee",
+   "lon": 10.72,
+   "lat": 47.49,
+   "type": "mfg",
+   "role": "Tier 1",
+   "dx": 7,
+   "dy": 6,
+   "anchor": "start"
+  },
+  {
+   "name": "Plansee India HPM",
+   "short": "Plansee India",
+   "lon": 77.6,
+   "lat": 12.97,
+   "type": "mfg",
+   "role": "Tier 1 affiliate",
+   "dx": 7,
+   "dy": 4,
+   "anchor": "start"
+  },
+  {
+   "name": "A.L.M.T., Toyama",
+   "short": "A.L.M.T.",
+   "lon": 137.2,
+   "lat": 36.7,
+   "type": "mfg",
+   "role": "Tier 1 ITER supplier",
+   "dx": 7,
+   "dy": 12,
+   "anchor": "start"
+  },
+  {
+   "name": "Xiamen Tungsten / Honglu",
+   "short": "Xiamen",
+   "lon": 118.1,
+   "lat": 24.5,
+   "type": "proc",
+   "role": "Tier 2",
+   "dx": 7,
+   "dy": -3,
+   "anchor": "start"
+  },
+  {
+   "name": "H.C. Starck Tungsten, Goslar",
+   "short": "H.C. Starck",
+   "lon": 10.43,
+   "lat": 51.9,
+   "type": "proc",
+   "role": "Tier 2",
+   "dx": 7,
+   "dy": -5,
+   "anchor": "start"
+  },
+  {
+   "name": "GTP, Towanda PA",
+   "short": "GTP",
+   "lon": -76.44,
+   "lat": 41.77,
+   "type": "proc",
+   "role": "Tier 2",
+   "dx": -7,
+   "dy": 3,
+   "anchor": "end"
+  },
+  {
+   "name": "Traxys, Luxembourg",
+   "short": "Traxys",
+   "lon": 6.13,
+   "lat": 49.61,
+   "type": "proc",
+   "role": "Tier 3 trader",
+   "dx": -7,
+   "dy": -2,
+   "anchor": "end"
+  },
+  {
+   "name": "Nui Phao / Masan Tungsten",
+   "short": "Nui Phao",
+   "lon": 105.65,
+   "lat": 21.65,
+   "type": "mine",
+   "role": "Tier 3–4",
+   "dx": 7,
+   "dy": 12,
+   "anchor": "start"
+  },
+  {
+   "name": "Nyakabingo, Rwanda",
+   "short": "Nyakabingo",
+   "lon": 30.05,
+   "lat": -1.83,
+   "type": "mine",
+   "role": "Tier 4",
+   "dx": 7,
+   "dy": 12,
+   "anchor": "start"
+  },
+  {
+   "name": "Rubaya / North Kivu",
+   "short": "N. Kivu",
+   "lon": 28.9,
+   "lat": -1.55,
+   "type": "mine",
+   "role": "Tier 4 risk area",
+   "dx": -7,
+   "dy": 0,
+   "anchor": "end"
+  },
+  {
+   "name": "Karenni (Kayah) State",
+   "short": "Karenni",
+   "lon": 97.3,
+   "lat": 19.3,
+   "type": "mine",
+   "role": "Tier 4 risk area",
+   "dx": -7,
+   "dy": 10,
+   "anchor": "end"
+  },
+  {
+   "name": "Ganzhou, Jiangxi",
+   "short": "Ganzhou",
+   "lon": 114.9,
+   "lat": 25.8,
+   "type": "proc",
+   "role": "Chinese smelting hub",
+   "dx": -7,
+   "dy": -7,
+   "anchor": "end"
+  },
+  {
+   "name": "Sangdong",
+   "short": "Sangdong",
+   "lon": 128.9,
+   "lat": 37.1,
+   "type": "mine",
+   "role": "Tier 4",
+   "dx": -7,
+   "dy": -7,
+   "anchor": "end"
+  }
+ ],
+ "flows": [
+  {
+   "fromName": "A.L.M.T., Japan",
+   "toName": "ITER, France",
+   "from": [
+    137.2,
+    36.7
+   ],
+   "to": [
+    5.76,
+    43.71
+   ],
+   "kind": "supply",
+   "weight": 3,
+   "label": "Certified tungsten supplier for the divertor outer vertical targets [S09].",
+   "hs": "",
+   "confidence": "Confirmed",
+   "src": [
+    "S09"
+   ]
+  },
+  {
+   "fromName": "Plansee, Austria",
+   "toName": "ITER, France",
+   "from": [
+    10.72,
+    47.49
+   ],
+   "to": [
+    5.76,
+    43.71
+   ],
+   "kind": "supply",
+   "weight": 2,
+   "label": "Divertor mock-ups for qualification testing [S47]. Series supply not confirmed.",
+   "hs": "",
+   "confidence": "Reported",
+   "src": [
+    "S47"
+   ]
+  },
+  {
+   "fromName": "Xiamen Honglu, China",
+   "toName": "Plansee India",
+   "from": [
+    118.1,
+    24.5
+   ],
+   "to": [
+    77.6,
+    12.97
+   ],
+   "kind": "corridor",
+   "weight": 3,
+   "label": "HS 810196 tungsten wire, 6 rows, Jan–Feb 2026 [X05].",
+   "hs": "8101.96",
+   "confidence": "Sayari",
+   "src": [
+    "X05"
+   ]
+  },
+  {
+   "fromName": "Plansee India",
+   "toName": "Plansee, Austria",
+   "from": [
+    77.6,
+    12.97
+   ],
+   "to": [
+    10.72,
+    47.49
+   ],
+   "kind": "supply",
+   "weight": 1,
+   "label": "Intra-group flow assumed, not shown in the data [X04].",
+   "hs": "",
+   "confidence": "Inferred",
+   "src": [
+    "X04"
+   ]
+  },
+  {
+   "fromName": "Nui Phao, Vietnam",
+   "toName": "H.C. Starck, Germany",
+   "from": [
+    105.65,
+    21.65
+   ],
+   "to": [
+    10.43,
+    51.9
+   ],
+   "kind": "corridor",
+   "weight": 4,
+   "label": "HS 2841 tungstates (APT), 232 rows to Nov 2024 [X07].",
+   "hs": "2841",
+   "confidence": "Sayari",
+   "src": [
+    "X07"
+   ]
+  },
+  {
+   "fromName": "Rwanda",
+   "toName": "Masan, Vietnam",
+   "from": [
+    30.05,
+    -1.83
+   ],
+   "to": [
+    105.65,
+    21.65
+   ],
+   "kind": "corridor",
+   "weight": 3,
+   "label": "HS 2611 concentrate, 56 rows to Feb 2025 [X08].",
+   "hs": "2611",
+   "confidence": "Sayari",
+   "src": [
+    "X08"
+   ]
+  },
+  {
+   "fromName": "Rwanda",
+   "toName": "Traxys, Europe",
+   "from": [
+    30.05,
+    -1.83
+   ],
+   "to": [
+    6.13,
+    49.61
+   ],
+   "kind": "corridor",
+   "weight": 4,
+   "label": "HS 2611 concentrate, 191 rows to Jul 2026 [X09].",
+   "hs": "2611",
+   "confidence": "Sayari",
+   "src": [
+    "X09"
+   ]
+  },
+  {
+   "fromName": "Nyakabingo, Rwanda",
+   "toName": "GTP, Pennsylvania",
+   "from": [
+    30.05,
+    -1.83
+   ],
+   "to": [
+    -76.44,
+    41.77
+   ],
+   "kind": "supply",
+   "weight": 3,
+   "label": "More than 320 t of concentrate; up to 20% of US primary supply [S20].",
+   "hs": "2611",
+   "confidence": "Reported",
+   "src": [
+    "S20"
+   ]
+  },
+  {
+   "fromName": "North Kivu, DRC",
+   "toName": "Rwanda",
+   "from": [
+    28.9,
+    -1.55
+   ],
+   "to": [
+    30.05,
+    -1.83
+   ],
+   "kind": "risk",
+   "weight": 3,
+   "label": "UN-documented smuggling of Congolese 3T minerals into Rwanda's export chain [S17, S19].",
+   "hs": "",
+   "confidence": "Reported",
+   "src": [
+    "S17",
+    "S19"
+   ]
+  },
+  {
+   "fromName": "Karenni, Myanmar",
+   "toName": "Ganzhou, China",
+   "from": [
+    97.3,
+    19.3
+   ],
+   "to": [
+    114.9,
+    25.8
+   ],
+   "kind": "risk",
+   "weight": 4,
+   "label": "Tungsten ore to China up 97% year on year to 6,191 t (Jan–Jul 2026), from armed-group areas [S22].",
+   "hs": "2611",
+   "confidence": "Reported",
+   "src": [
+    "S22"
+   ]
+  }
+ ]
+}

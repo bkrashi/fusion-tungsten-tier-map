@@ -1,0 +1,174 @@
+[
+ {
+  "id": "r1",
+  "from": "almt",
+  "to": "iter",
+  "type": "supply",
+  "product": "Tungsten for the divertor outer vertical targets",
+  "evidence": "Sumitomo Electric names A.L.M.T. as the certified ITER outer-vertical-target supplier [S09].",
+  "confidence": "Confirmed",
+  "src": [
+   "S09"
+  ]
+ },
+ {
+  "id": "r2",
+  "from": "plansee",
+  "to": "iter",
+  "type": "supply",
+  "product": "Divertor mock-ups for qualification",
+  "evidence": "Plansee mock-ups were used in Fusion for Energy high-heat-flux testing [S47]. Series supply is not confirmed.",
+  "confidence": "Reported",
+  "src": [
+   "S47"
+  ]
+ },
+ {
+  "id": "r3",
+  "from": "vactech",
+  "to": "iter",
+  "type": "trade",
+  "product": "Unconfirmed product",
+  "evidence": "Shortest Sayari path from ITER to Plansee runs through Vacuum Techniques; the product is not confirmed [X15].",
+  "confidence": "Inferred",
+  "src": [
+   "X15"
+  ]
+ },
+ {
+  "id": "r4",
+  "from": "plansee",
+  "to": "vactech",
+  "type": "trade",
+  "product": "Unconfirmed product",
+  "evidence": "Sayari trade edge with the product not confirmed [X15].",
+  "confidence": "Inferred",
+  "src": [
+   "X15"
+  ]
+ },
+ {
+  "id": "r5",
+  "from": "plansee-in",
+  "to": "plansee",
+  "type": "ownership",
+  "product": "Group affiliate",
+  "evidence": "Plansee India HPM is a Plansee group company [X04]. Flow inside the group is assumed, not shown.",
+  "confidence": "Sayari",
+  "src": [
+   "X04"
+  ]
+ },
+ {
+  "id": "r6",
+  "from": "honglu",
+  "to": "plansee-in",
+  "type": "supply",
+  "product": "HS 810196 tungsten wire",
+  "evidence": "6 shipment rows, 2026-01-28 to 2026-02-05 [X05].",
+  "confidence": "Sayari",
+  "src": [
+   "X05"
+  ]
+ },
+ {
+  "id": "r7",
+  "from": "xtc",
+  "to": "honglu",
+  "type": "ownership",
+  "product": "Parent company",
+  "evidence": "Xiamen Tungsten is a recorded shareholder of Xiamen Honglu [X06].",
+  "confidence": "Sayari",
+  "src": [
+   "X06"
+  ]
+ },
+ {
+  "id": "r8",
+  "from": "masan-w",
+  "to": "hcstarck",
+  "type": "supply",
+  "product": "HS 2841 tungstates (APT), Vietnam to Germany",
+  "evidence": "232 Vietnam-origin HS 2841 rows to 2024-11-08 [X07]. The shipper is assumed to be the Masan group, which co-owns H.C. Starck Tungsten.",
+  "confidence": "Sayari",
+  "src": [
+   "X07"
+  ]
+ },
+ {
+  "id": "r9",
+  "from": "nuiphao",
+  "to": "masan-w",
+  "type": "supply",
+  "product": "HS 2611 concentrate",
+  "evidence": "Masan Tungsten buys Vietnamese HS 2611 from Nui Phao [X08, X10].",
+  "confidence": "Sayari",
+  "src": [
+   "X08",
+   "X10"
+  ]
+ },
+ {
+  "id": "r10",
+  "from": "trinity",
+  "to": "masan-w",
+  "type": "supply",
+  "product": "HS 2611 concentrate, Rwanda to Vietnam",
+  "evidence": "Masan Tungsten imported 56 rows of Rwandan HS 2611 [X08]. Trinity is the top Rwandan exporter, but this shipper–buyer pairing is inferred.",
+  "confidence": "Inferred",
+  "src": [
+   "X08",
+   "X11"
+  ]
+ },
+ {
+  "id": "r11",
+  "from": "trinity",
+  "to": "traxys",
+  "type": "supply",
+  "product": "HS 2611 concentrate, Rwanda to Europe",
+  "evidence": "Traxys is the top buyer of Rwandan HS 2611 (191 rows) [X09]. The pairing with Trinity is inferred.",
+  "confidence": "Inferred",
+  "src": [
+   "X09",
+   "X11"
+  ]
+ },
+ {
+  "id": "r12",
+  "from": "trinity",
+  "to": "gtp",
+  "type": "supply",
+  "product": "Tungsten concentrate, Rwanda to the USA",
+  "evidence": "More than 320 t shipped to Global Tungsten & Powders, Towanda PA [S20].",
+  "confidence": "Reported",
+  "src": [
+   "S20"
+  ]
+ },
+ {
+  "id": "r13",
+  "from": "drc-asm",
+  "to": "trinity",
+  "type": "risk",
+  "product": "Smuggled 3T minerals into Rwanda",
+  "evidence": "The UN Group of Experts identifies Rwanda as a transit point for Congolese 3T minerals [S17, S19]. No link to Nyakabingo specifically has been reported; this edge shows a corridor risk.",
+  "confidence": "Inferred",
+  "src": [
+   "S17",
+   "S19"
+  ]
+ },
+ {
+  "id": "r14",
+  "from": "mmr",
+  "to": "xtc",
+  "type": "risk",
+  "product": "Myanmar ore into Chinese smelters",
+  "evidence": "Myanmar tungsten ore to China rose 97% year on year in 2026 [S22]. The receiving smelters are not named; this edge stands for the Chinese sector, not Xiamen Tungsten specifically.",
+  "confidence": "Inferred",
+  "src": [
+   "S22"
+  ]
+ }
+]

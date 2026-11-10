@@ -1,0 +1,399 @@
+[
+ {
+  "id": "iter",
+  "name": "ITER Organization",
+  "tier": 0,
+  "country": "France",
+  "role": "Builds the ITER tokamak at Cadarache. The divertor uses about 300,000 tungsten monoblocks [S08], and in 2023 ITER switched the first-wall armour from beryllium to tungsten [S07].",
+  "flags": [
+   "sanctioned_adjacent",
+   "psa_forced_labor_xinjiang_origin_subtier",
+   "psa_forced_labor_aspi_origin_subtier"
+  ],
+  "evidence": "Sayari shows no inbound tungsten shipment under HS 2611, 8101, 2841 or 2849 [X01]. Its one tungsten record is outbound: HS 810199 to NIIEFA, a Rosatom-owned institute on Ukraine's sanctions list, on 2023-03-17 [X01, X16].",
+  "confidence": "Confirmed",
+  "src": [
+   "S07",
+   "S08",
+   "X01"
+  ],
+  "sayari_id": "6HM97E0IwMb_-KCTk97H-A",
+  "aliases": [
+   "ITER",
+   "International Fusion Energy Organization"
+  ]
+ },
+ {
+  "id": "cfs",
+  "name": "Commonwealth Fusion Systems",
+  "tier": 0,
+  "country": "United States",
+  "role": "Builds the SPARC tokamak in Devens, Massachusetts, using REBCO high-temperature superconducting magnets [S12].",
+  "flags": [],
+  "evidence": "Sayari shows no inbound tungsten shipment, with or without an HS filter [X02]. One outbound HS 810199 record goes to OOO S-Innovatsii (Russia), dated 2022-05-04 [X02]. Its tungsten suppliers are not visible in public trade data.",
+  "confidence": "Confirmed",
+  "src": [
+   "S12",
+   "X02"
+  ],
+  "sayari_id": "pvo3Wv7gZb9K0hiji7-Nag",
+  "aliases": [
+   "CFS",
+   "SPARC"
+  ]
+ },
+ {
+  "id": "almt",
+  "name": "A.L.M.T. Corp. (Sumitomo Electric)",
+  "tier": 1,
+  "country": "Japan",
+  "role": "Certified supplier of tungsten for ITER's divertor outer vertical targets [S09]. Listed as an RMAP-conformant tungsten smelter in SEC conflict-minerals filings [S33].",
+  "flags": [],
+  "evidence": "Supplier role confirmed by Sumitomo Electric [S09]. Not traced in Sayari.",
+  "confidence": "Confirmed",
+  "src": [
+   "S09",
+   "S33"
+  ],
+  "sayari_id": null,
+  "aliases": [
+   "ALMT",
+   "Allied Material"
+  ]
+ },
+ {
+  "id": "vactech",
+  "name": "Vacuum Techniques Pvt Ltd",
+  "tier": 1,
+  "country": "India / France",
+  "role": "Trading intermediary on the shortest Sayari path between Plansee and ITER.",
+  "flags": [
+   "forced_labor_uflpa_origin_subtier_product_blueprint"
+  ],
+  "evidence": "Graph edge only. The products on both trade edges are unconfirmed [X15].",
+  "confidence": "Inferred",
+  "src": [
+   "X15"
+  ],
+  "sayari_id": "ovc-XbQTAuwybyB9F3vqQA",
+  "aliases": []
+ },
+ {
+  "id": "plansee",
+  "name": "Plansee SE",
+  "tier": 1,
+  "country": "Austria",
+  "role": "Refractory-metal manufacturer in Reutte. It produced ITER divertor mock-ups for high-heat-flux qualification [S47].",
+  "flags": [
+   "sanctioned_adjacent",
+   "export_controls_adjacent",
+   "exports_ilab_forced_labor",
+   "forced_labor_uflpa_origin_subtier",
+   "forced_labor_xinjiang_origin_subtier"
+  ],
+  "evidence": "Sayari watchlist finds sanctioned Russian buyers one hop away (Krasnoyarsk Non-Ferrous Metals Plant; TD Proton-Electrotex, OFAC SDN) [X03]. Its forced-labor flags are derived from network analysis of its supply chain, not from a finding against Plansee [X03].",
+  "confidence": "Sayari",
+  "src": [
+   "S47",
+   "X03"
+  ],
+  "sayari_id": "MsGY4nzhiKWCe3RnnCOJUQ",
+  "aliases": [
+   "Plansee Group",
+   "Reutte"
+  ]
+ },
+ {
+  "id": "plansee-in",
+  "name": "Plansee India HPM",
+  "tier": 1,
+  "country": "India",
+  "role": "Plansee group affiliate. A large importer of tungsten products (HS 8101).",
+  "flags": [
+   "exports_conflict_minerals",
+   "exports_to_usa_bis_entity",
+   "forced_labor_xinjiang_origin_subtier"
+  ],
+  "evidence": "4,459 HS 8101 import rows, the latest dated 2026-02-27 [X04].",
+  "confidence": "Sayari",
+  "src": [
+   "X04"
+  ],
+  "sayari_id": "fY5iZjKDdWEW1InaCltzGQ",
+  "aliases": []
+ },
+ {
+  "id": "honglu",
+  "name": "Xiamen Honglu Tungsten-Molybdenum",
+  "tier": 2,
+  "country": "China",
+  "role": "Tungsten wire and products maker; a subsidiary of Xiamen Tungsten.",
+  "flags": [
+   "exports_ilab_child_labor",
+   "exports_ilab_forced_labor",
+   "sanctioned_adjacent",
+   "owned_by_regulatory_action_entity"
+  ],
+  "evidence": "Shipped HS 810196 tungsten wire to Plansee India, 2026-01-28 to 2026-02-05 [X05]. This is the strongest direct tungsten link into the Plansee group.",
+  "confidence": "Sayari",
+  "src": [
+   "X05"
+  ],
+  "sayari_id": "BaNTzeCN2TV7iT5uCieXTA",
+  "aliases": [
+   "Honglu"
+  ]
+ },
+ {
+  "id": "xtc",
+  "name": "Xiamen Tungsten Co.",
+  "tier": 2,
+  "country": "China",
+  "role": "One of China's largest integrated tungsten groups, covering mining, APT, powder and wire.",
+  "flags": [
+   "regulatory_action",
+   "chinese_soe_adjacent",
+   "owner_of_forced_labor_xinjiang_entity"
+  ],
+  "evidence": "Shareholder of Xiamen Honglu (ownership edge) [X06]. Its exports have needed licences since China's February 2025 controls [S25].",
+  "confidence": "Sayari",
+  "src": [
+   "X06",
+   "S25"
+  ],
+  "sayari_id": "8Munl6IQXYkj0pTG0k-LtQ",
+  "aliases": [
+   "厦门钨业",
+   "XTC"
+  ]
+ },
+ {
+  "id": "hcstarck",
+  "name": "H.C. Starck Tungsten GmbH",
+  "tier": 2,
+  "country": "Germany",
+  "role": "Tungsten powder and APT processor in Goslar.",
+  "flags": [
+   "export_controls_adjacent",
+   "psa_owned_by_sanctioned_entity"
+  ],
+  "evidence": "Bought HS 2841 tungstates from Vietnam: 232 rows to 2024-11-08 [X07]. Owners recorded in Sayari are Mitsubishi Materials and Masan Tungsten [X07].",
+  "confidence": "Sayari",
+  "src": [
+   "X07"
+  ],
+  "sayari_id": "F1Gc4u8G6X5WTpmhZpn9Mw",
+  "aliases": [
+   "HC Starck"
+  ]
+ },
+ {
+  "id": "gtp",
+  "name": "Global Tungsten & Powders",
+  "tier": 2,
+  "country": "United States",
+  "role": "Tungsten processor in Towanda, Pennsylvania. RMI smelter ID CID000568 [S33].",
+  "flags": [],
+  "evidence": "Received more than 320 t of concentrate from Rwanda's Nyakabingo mine [S20].",
+  "confidence": "Reported",
+  "src": [
+   "S20",
+   "S33"
+  ],
+  "sayari_id": null,
+  "aliases": [
+   "GTP",
+   "Towanda"
+  ]
+ },
+ {
+  "id": "ctht",
+  "name": "China Tungsten High-Tech",
+  "tier": 2,
+  "country": "China",
+  "role": "State-owned tungsten carbide and products group.",
+  "flags": [
+   "owned_by_chinese_soe",
+   "soe_adjacent"
+  ],
+  "evidence": "No Sayari link to Plansee, ITER or CFS was found [X12].",
+  "confidence": "Sayari",
+  "src": [
+   "X12"
+  ],
+  "sayari_id": "MwpjMEWQB4zy79n9eSyEnw",
+  "aliases": [
+   "中钨高新",
+   "CTHT"
+  ]
+ },
+ {
+  "id": "jxt",
+  "name": "Jiangxi Tungsten Holding",
+  "tier": 2,
+  "country": "China",
+  "role": "Core state-owned enterprise in Jiangxi, China's main tungsten province.",
+  "flags": [
+   "chinese_core_soe",
+   "state_owned",
+   "pep_adjacent",
+   "owned_by_regulatory_action_entity"
+  ],
+  "evidence": "No link to the fusion anchors was found [X13].",
+  "confidence": "Sayari",
+  "src": [
+   "X13"
+  ],
+  "sayari_id": "EVuDbT8I1UvAT0pNfMR0_Q",
+  "aliases": [
+   "江西钨业"
+  ]
+ },
+ {
+  "id": "masan-w",
+  "name": "Masan Tungsten",
+  "tier": 3,
+  "country": "Vietnam",
+  "role": "Processes concentrate into APT and oxides at Nui Phao. Part of Masan High-Tech Materials.",
+  "flags": [
+   "sanctioned_adjacent",
+   "export_controls_adjacent",
+   "forced_labor_uflpa_origin_subtier",
+   "forced_labor_xinjiang_origin_subtier"
+  ],
+  "evidence": "Buys HS 2611 concentrate from Rwanda (56 rows to 2025-02-07) and from Nui Phao in Vietnam [X08].",
+  "confidence": "Sayari",
+  "src": [
+   "X08"
+  ],
+  "sayari_id": "uEVxlKok1dI7gxPTjVtYPg",
+  "aliases": [
+   "Vonfram Masan",
+   "Masan High-Tech Materials"
+  ]
+ },
+ {
+  "id": "traxys",
+  "name": "Traxys Europe S.A.",
+  "tier": 3,
+  "country": "Luxembourg / Belgium",
+  "role": "Commodity trader. The top buyer of Rwandan tungsten concentrate.",
+  "flags": [
+   "sanctioned_adjacent",
+   "exports_conflict_minerals",
+   "forced_labor_xinjiang_origin_subtier"
+  ],
+  "evidence": "191 rows of Rwandan HS 2611 imports to 2026-07-30. Also ships to sanctioned RUSAL Krasnoyarsk and Uralredmet [X09].",
+  "confidence": "Sayari",
+  "src": [
+   "X09"
+  ],
+  "sayari_id": "49gLiIsaRq1p3s8vhLc4cw",
+  "aliases": []
+ },
+ {
+  "id": "mmr",
+  "name": "Karenni and Shan tungsten districts",
+  "tier": 4,
+  "country": "Myanmar",
+  "role": "Tin-tungsten mining in areas held by ethnic armed groups and resistance forces.",
+  "flags": [
+   "psa_sanctioned (No.(2) Mining Enterprise)"
+  ],
+  "evidence": "Shipments to China rose 97% year on year to 6,191 t in January–July 2026, and airstrikes killed civilians in the mining district [S22]. Sayari shows only 3 Myanmar HS 2611 shippers [X19].",
+  "confidence": "Reported",
+  "src": [
+   "S22",
+   "X19"
+  ],
+  "sayari_id": null,
+  "aliases": [
+   "Myanmar",
+   "Mawchi",
+   "Burma"
+  ]
+ },
+ {
+  "id": "nuiphao",
+  "name": "Nui Phao Mining",
+  "tier": 4,
+  "country": "Vietnam",
+  "role": "Large tungsten mine outside China, owned by Masan.",
+  "flags": [
+   "soe_adjacent",
+   "eu_high_risk_third",
+   "forced_labor_uflpa_origin_subtier"
+  ],
+  "evidence": "Exported HS 2611 (14 rows, latest 2025-09-06) [X10]. Vietnam mined 3,000 t of tungsten in 2025 [S01].",
+  "confidence": "Sayari",
+  "src": [
+   "X10",
+   "S01"
+  ],
+  "sayari_id": "C3d1Y7jwfiJLh83S575J-A",
+  "aliases": [
+   "Nui Phao"
+  ]
+ },
+ {
+  "id": "trinity",
+  "name": "Trinity Nyakabingo Mine",
+  "tier": 4,
+  "country": "Rwanda",
+  "role": "Industrial tungsten mine near Kigali. It supplies up to 20% of US primary tungsten concentrate [S20].",
+  "flags": [],
+  "evidence": "Rwanda's top HS 2611 exporter in Sayari (109 rows) [X11]. No allegation that this mine is contaminated was found. The risk is that it sits in a corridor where the UN documents laundering of Congolese 3T minerals [S17, S19].",
+  "confidence": "Sayari",
+  "src": [
+   "X11",
+   "S20"
+  ],
+  "sayari_id": "i8S1NHEFxPnL94FD6JUM-Q",
+  "aliases": [
+   "Trinity Metals",
+   "Nyakabingo"
+  ]
+ },
+ {
+  "id": "drc-asm",
+  "name": "Artisanal 3T sites, North and South Kivu",
+  "tier": 4,
+  "country": "DR Congo",
+  "role": "Artisanal wolframite, cassiterite and coltan mining in eastern DRC.",
+  "flags": [
+   "exports_conflict_minerals (DRC HS 2611 shippers)"
+  ],
+  "evidence": "The US DOL lists DRC tungsten as made with forced and child labor [S15, S14]. The UN documents M23 control of mining routes and smuggling into Rwanda [S17].",
+  "confidence": "Reported",
+  "src": [
+   "S14",
+   "S15",
+   "S17"
+  ],
+  "sayari_id": null,
+  "aliases": [
+   "DRC",
+   "Kivu",
+   "M23"
+  ]
+ },
+ {
+  "id": "almonty",
+  "name": "Almonty Korea Tungsten (Sangdong)",
+  "tier": 4,
+  "country": "South Korea",
+  "role": "New mine outside China, owned by Almonty Industries (Canada).",
+  "flags": [],
+  "evidence": "Holds CAGE and SAM US federal contractor IDs [X14]. Almonty Industries has no sanctioned or PEP link within two hops [X18]. No trade link to the fusion anchors was found.",
+  "confidence": "Sayari",
+  "src": [
+   "X14",
+   "X18"
+  ],
+  "sayari_id": "aATVKaOHflEgtWDg3c40Kg",
+  "aliases": [
+   "Almonty",
+   "Sangdong"
+  ]
+ }
+]

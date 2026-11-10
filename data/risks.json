@@ -1,0 +1,114 @@
+[
+ {
+  "id": "drc-rwa",
+  "rank": 1,
+  "title": "Armed-group control and smuggling in DRC 3T minerals, laundered through Rwanda",
+  "region": "DR Congo · Rwanda",
+  "severity": 5,
+  "traceability": 3,
+  "confidence": "Reported",
+  "summary": "M23 holds mining zones and the routes out of them in eastern DRC. The UN says Congolese tin, tantalum and tungsten minerals are exported through Rwanda, the same corridor that now supplies a fifth of US primary tungsten concentrate [S17, S19, S20].",
+  "evidence": [
+   "The UN Group of Experts says M23 took Rubaya to 'monopolize the only viable route for mineral evacuation'. It found 400 t of coltan smuggled into the legal chain in 2023 [S17].",
+   "The experts called this the 'greatest contamination ever recorded' of Great Lakes mineral supply chains; M23 earns at least $800,000 a month [S18].",
+   "The UN Group of Experts identifies Rwanda as an important transit and export point for Congolese 3T minerals [S19].",
+   "Rwanda's Nyakabingo mine supplies up to 20% of US primary tungsten concentrate [S20]."
+  ],
+  "sayari": [
+   "Rwanda HS 2611: 72 suppliers. The top buyers are Traxys (191 rows), Halcyon (70) and Masan Tungsten (56) [X19, X09, X08].",
+   "Every DRC HS 2611 shipper Sayari returned carries the exports_conflict_minerals flag [X19]."
+  ],
+  "inference": [
+   "The quantified UN laundering findings concern coltan. Applying the same pattern to wolframite is an inference; no 2023–25 UN tungsten figure was found.",
+   "No allegation names Nyakabingo itself. The risk is to the corridor, not that mine."
+  ],
+  "trace_reason": "Named exporters and buyers are visible in trade data, and smelters have RMI IDs. But laundering mixes smuggled ore into legal exports before the trade record exists, and audited smelters have passed while M23 held Rubaya [S31]."
+ },
+ {
+  "id": "mmr",
+  "rank": 2,
+  "title": "Conflict mining in Myanmar feeding Chinese smelters",
+  "region": "Myanmar → China",
+  "severity": 5,
+  "traceability": 1,
+  "confidence": "Reported",
+  "summary": "Myanmar has become one of China's largest sources of tungsten ore. The ore comes from districts held by armed groups, where airstrikes have killed civilians [S22].",
+  "evidence": [
+   "Myanmar tungsten ore shipments to China rose 97% year on year to 6,191 t in January–July 2026 [S22].",
+   "Resistance forces have controlled Karenni State's main tin and tungsten district since 2024. Airstrikes killed at least 22 civilians in August 2025 and six more in September 2026 [S22].",
+   "Myanmar is the top exporter of tungsten ores by value [S14]."
+  ],
+  "sayari": [
+   "Only three Myanmar HS 2611 shippers appear in Sayari, one of which (No.(2) Mining Enterprise) carries a possible-match sanctions flag [X19]."
+  ],
+  "inference": [
+   "Once Myanmar ore is smelted in China it is indistinguishable from Chinese APT. Any fusion part made from Chinese tungsten carries this exposure."
+  ],
+  "trace_reason": "The ore moves overland into China and is mixed at the smelter. Trade data barely shows it, and no public audit names which smelters buy it."
+ },
+ {
+  "id": "drc-labor",
+  "rank": 3,
+  "title": "Forced and child labor in artisanal tungsten mining in DRC",
+  "region": "DR Congo",
+  "severity": 4,
+  "traceability": 2,
+  "confidence": "Confirmed",
+  "summary": "The US government lists DRC tungsten as a good produced with both forced labor and child labor [S15, S14].",
+  "evidence": [
+   "The DOL 2024 List of Goods includes tin, tantalum, gold and tungsten from the DRC [S15].",
+   "The 2026 commodity report lists 'Tungsten: DRC (FL, CL)'. It says children are exploited in illegal coltan, tungsten and tin mining or recruited by armed groups, and miners have been forced to work at gunpoint without pay [S14]."
+  ],
+  "sayari": [
+   "DRC HS 2611 shippers include Halcyon (20 rows), Société Générale de Commerce and CJX Minerals. All carry exports_conflict_minerals flags, plus ILAB flags [X19]."
+  ],
+  "inference": [
+   "Artisanal output is small in tonnage. It enters fusion supply mainly through the Rwanda corridor described in risk 1."
+  ],
+  "trace_reason": "Artisanal sites are numerous, informal and rarely named in trade records. The upstream traceability scheme ITSCI lost RMI recognition in 2024 [S32]."
+ },
+ {
+  "id": "china",
+  "rank": 4,
+  "title": "Chinese forced-labor exposure and state control",
+  "region": "China",
+  "severity": 3,
+  "traceability": 2,
+  "confidence": "Sayari",
+  "summary": "China mines 79% of the world's tungsten [S01] and has licensed its exports since February 2025 [S25]. Sayari flags several Chinese tungsten groups for Xinjiang-linked ownership or state control. No tungsten company is on the UFLPA Entity List [S23, S24].",
+  "evidence": [
+   "China produced 67,000 t of the 85,000 t of tungsten mined in 2025 [S01].",
+   "Licences are required for exports of APT, tungsten oxide, carbide and W-Ni-Fe/W-Ni-Cu alloys (MOFCOM/GAC No. 10 of 2025) [S25].",
+   "UFLPA additions in 2024 and 2026 covered beryllium, lithium, copper and other metals, but no tungsten producer [S23, S24]."
+  ],
+  "sayari": [
+   "Xiamen Tungsten is flagged owner_of_forced_labor_xinjiang_entity and regulatory_action. Its subsidiary Honglu ships tungsten wire to Plansee India [X06, X05].",
+   "Jiangxi Tungsten Holding is a core state-owned enterprise; China Tungsten High-Tech is owned by a Chinese SOE [X13, X12]."
+  ],
+  "inference": [
+   "The Xinjiang flag concerns another business in the Xiamen Tungsten group, not tungsten production. Severity is therefore rated moderate."
+  ],
+  "trace_reason": "Corporate ownership is visible in Sayari and in Chinese registries. Smelter-to-mine sourcing inside China is not."
+ },
+ {
+  "id": "bol",
+  "rank": 5,
+  "title": "Child labor in Bolivia's cooperative mines",
+  "region": "Bolivia",
+  "severity": 3,
+  "traceability": 3,
+  "confidence": "Inferred",
+  "summary": "Bolivia mines 1,700 t of tungsten a year [S01]. The US DOL documents child labor in Bolivia's cooperative mines for tin, zinc, silver and lead, but it does not list tungsten [S16].",
+  "evidence": [
+   "The DOL 2024 List covers Bolivian gold, lead, silver, sugarcane, tin and zinc. Tungsten is absent [S16].",
+   "The DOL found that in Potosí cooperatives 'children as young as age 13 work inside mines' [S16]."
+  ],
+  "sayari": [
+   "Bolivian HS 2611 exporters are named: Jurametal (44 rows), Polimin (42) and Kennametal Bolivia (32). Miski Rumi/Shuang Cheng carries an ILAB child-labor flag [X19]."
+  ],
+  "inference": [
+   "Applying the child-labor risk to tungsten assumes tungsten moves through the same cooperative system. No source documents child labor in Bolivian tungsten specifically."
+  ],
+  "trace_reason": "A small number of named exporters makes the chain fairly traceable. The documented evidence is for other metals, not tungsten."
+ }
+]
